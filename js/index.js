@@ -55,7 +55,7 @@ const loadingData = (estado) => {
 const traerProductos = async () =>{
     try {
         loadingData(true);
-        const response = await fetch("../js/data.json");
+        const response = await fetch("./js/data.json");
         const data = await response.json();
         renderIndex(data);
     } catch (error) {
